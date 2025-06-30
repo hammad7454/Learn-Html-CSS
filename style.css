@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(113, 120, 120);
+}
+h1{
+    font-size: 50px;
+    color: rgb(53, 52, 51);
+}
+p{
+    font-size: 25px;
+    color: rgb(74, 77, 77);
+}
+.navbar{
+    background-color: azure;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-list ul{
+    display: flex;
+    padding-top: 10px;
+    padding-right: 70px;
+}
+.navbar-list ul li{
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+.navbar-brand{
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.navbar-brand span{
+    font-weight: 400;
+    color: red;
+}
+/* ************About Us************* */
+.about-us{
+    background-image: url(img/imagew.5.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px;
+}
+.about-us button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(240, 255, 255, 0.491);
+    border-color: azure;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 10px;
+}
+/* ***********Contact-Us************* */
+.contact-head h1{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(26, 33, 37);
+}
+.contact-us-body{
+  display: flex;
+  justify-content: center; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+label{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(46, 43, 43)
+}
+input{
+    display: block;
+    font-size: large;
+    width: 500px;
+    text-align: start;
+}
+.contact-us{
+    margin-top: 10px;
+    background-size: cover;
+    background: linear-gradient(to bottom right, #5998a9, #d2d2d2);
+}
+.contact-us button{
+    text-decoration: none;
+    padding:10px;
+    background-color: rgba(240, 255, 255, 0.491);
+    border-color: azure;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 40%;
+    
+}
+.contact-us button:hover{
+    background-color: #5998a9;
+}
+/* ***************footer************** */
+.footer{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("./img/imagew.2.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px;
+}
+.footer p{
+    color: #000000;
+}
+.footer ul{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.footer ul li{
+    padding: 10px;
+}
+
+/* **********Media Queries*********** */
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) {
+  .about-us {
+    padding: 80px;
+    text-align: center;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .contact-us button {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .footer {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-list ul {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .navbar-list ul li {
+    padding: 10px 0;
+  }
+
+  .about-us {
+    padding: 50px;
+  }
+
+  .about-us h1 {
+    font-size: 32px;
+  }
+
+  .about-us p {
+    font-size: 18px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .contact-us button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footer ul {
+    flex-direction: column;
+    font-size: 30px;
+  }
+
+  .footer ul li {
+    padding: 5px;
+  }
+
+  .footer {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-list ul li {
+    font-size: 16px;
+  }
+
+  .about-us {
+    padding: 30px;
+  }
+
+  .about-us h1 {
+    font-size: 24px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+
+  .about-us button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  .contact-us-body {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 40px;
+  }
+  .footer ul{
+    display: flex;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
